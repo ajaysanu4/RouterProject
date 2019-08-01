@@ -1,11 +1,17 @@
-<div id="app" >
+<div id="app"  >
 <hr>
-<a routerLink="points"><u>Points</u></a>&nbsp;
+<a  routerLinkActive="active" routerLink="points" 
+><u>Points</u></a>&nbsp;
 <a routerLink="news"><u>News</u></a>&nbsp;
 <a routerLink="Upcommingmatches"><u>Maches</u></a>&nbsp;
+<a routerLink="bike"><u>Bikes</u></a>&nbsp;
+<a routerLink="engine"><u>Engine</u></a>&nbsp;
+<button class="btn btn-primary" (click)="NavigateToPoints()" >NavigateToPoints</button>
 <hr>
 <div class="container">
+<div appCustomDirective> We are learning Angular 7</div>
   <router-outlet></router-outlet>
 
 </div>
+
 </div>

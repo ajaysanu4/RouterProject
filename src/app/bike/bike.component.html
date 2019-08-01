@@ -1,0 +1,10 @@
+<h2>Welcome to Bike Component</h2>
+{{model}}
+<br>
+{{Type}}
+<br>
+{{abs}}
+<br>
+Model : <input [(ngModel)]="model" name="Model"/>&nbsp;
+<button (click)="toggle()">Toggle</button>
+<app-engine [bikeModel]="model" *ngIf="show" ></app-engine>   
